@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+:root {
+  --background-color: #f5f5f5;
+  --text-color: #333333;
+  --accent-color: #6c5ce7;
+  --hover-color: #a29bfe;
+  --shadow-color: rgba(108, 92, 231, 0.1);
+  --border-color: #dddddd;
+  --font-family: "Helvetica Neue", Arial, sans-serif;
+  --cta-background: #fd7e14;
+  --cta-text: #ffffff;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+a:hover {
+}
+
+/* Host Page */
+.host-hero-image {
+  max-width: 100%;
+}
+
+.host-page-content {
+  padding: 0 1.5rem;
+  color: var(--text-color);
+  margin-bottom: 3rem;
+}
+
+.host-page-content h1 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.host-page-content p {
+  line-height: 1.5rem;
+}
+
+.host-page-cta {
+  background-color: var(--cta-background);
+  color: var(--cta-text);
+  padding: 2rem;
+  margin: 0 1.5rem;
+  border-radius: 0.625rem;
+}
+
+.host-page-cta h2 {
+  margin: 0;
+  padding-top: 2rem;
+}
+
+.host-page-cta .link-button {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease-out;
+}
+
+.host-page-cta .link-button:hover {
+  background-color: var(--hover-color);
+}
+
+@media (max-width: 768px) {
+  .about-page-content,
+  .host-page-content,
+  .item-list-container,
+  .item-detail-container,
+  .host-items-list {
+    padding: 0 1rem;
+  }
+
+  .about-page-content h1,
+  .host-page-content h1 {
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+  }
+
+  .about-page-content p,
+  .host-page-content p,
+  .item-detail p,
+  .host-item-info p {
+    line-height: 1.3rem;
+  }
+
+  .about-page-cta,
+  .host-page-cta,
+  .item-detail .link-button,
+  .host-item-detail-layout-container .link-button {
+    padding: 1.5rem;
+    font-size: 0.875rem;
+  }
+}

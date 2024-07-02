@@ -1,0 +1,46 @@
+/* Home Page */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)),
+    url("./assets/images/home-hero.avif") no-repeat center center;
+  background-size: cover;
+  min-height: 22rem;
+  color: #ffffff;
+  padding: 2.2rem 1.4rem;
+}
+
+.home-container h1 {
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 2.625rem;
+}
+
+.home-container p {
+  line-height: 1.5rem;
+}
+
+.home-container a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  background-color: #6c5ce7;
+  border: none;
+  width: fit-content;
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: transform 0.2s ease-out;
+}
+
+.home-container a:hover {
+  transform: scale(1.02);
+}

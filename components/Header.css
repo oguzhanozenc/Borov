@@ -1,0 +1,52 @@
+header {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.5rem;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px var(--shadow-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+header .site-logo {
+  color: var(--text-color);
+  margin-right: auto;
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+header a {
+  color: var(--text-color);
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+header a:hover {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  header {
+    height: 5rem;
+    padding: 0.75rem;
+  }
+
+  header .site-logo {
+    font-size: 1.6rem;
+  }
+
+  header a {
+    font-size: 0.875rem;
+    padding: 0.5rem 1.25rem;
+  }
+}

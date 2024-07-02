@@ -1,0 +1,74 @@
+.about-hero-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.about-hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: brightness(70%) contrast(120%);
+}
+
+.about-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  background-color: rgb(51, 51, 51, 0.2);
+}
+
+.about-page-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: 4rem auto;
+  text-align: center;
+  padding: 0 1.4rem;
+  background-color: rgb(51, 51, 51, 0.8);
+}
+
+.about-page-content h1 {
+  line-height: 2.4rem;
+}
+
+.about-page-content p {
+  line-height: 1.375rem;
+}
+
+.about-page-cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+  padding: 2rem;
+  margin: 0 1.5rem;
+  border-radius: 0.625rem;
+  text-align: center;
+}
+
+.about-page-cta h2 {
+  margin: 1rem 0;
+  color: #fff;
+}
+
+.about-page-cta .link-button {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.about-page-cta .link-button:hover {
+  background-color: var(--hover-color);
+}
